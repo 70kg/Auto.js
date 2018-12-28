@@ -76,6 +76,7 @@ repositories {
     flatDir {
         dirs 'libs'
     }
+    mavenCentral()
     google()
 }
 
@@ -85,9 +86,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //Glide
-    implementation('com.github.bumptech.glide:glide:4.2.0', {
-        exclude group: 'com.android.support'
-    })
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
     testImplementation 'junit:junit:4.12'
     implementation project(':automator')
     implementation project(':common')
