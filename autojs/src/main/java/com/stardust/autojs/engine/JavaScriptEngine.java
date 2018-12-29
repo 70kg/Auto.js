@@ -25,7 +25,7 @@ public abstract class JavaScriptEngine extends ScriptEngine.AbstractScriptEngine
     public ScriptRuntime getRuntime() {
         return mRuntime;
     }
-
+    //设置关键的runtime
     public void setRuntime(ScriptRuntime runtime) {
         if (mRuntime != null) {
             throw new IllegalStateException("a runtime has been set");

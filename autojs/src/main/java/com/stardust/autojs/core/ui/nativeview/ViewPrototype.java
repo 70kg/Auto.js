@@ -84,7 +84,7 @@ public class ViewPrototype {
         registerEventIfNeeded(eventName);
         return mEventEmitter.once(eventName, listener);
     }
-
+    //在js中的on 注册事件监听
     public EventEmitter on(String eventName, Object listener) {
         registerEventIfNeeded(eventName);
         return mEventEmitter.on(eventName, listener);
